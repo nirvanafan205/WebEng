@@ -1,0 +1,98 @@
+body {
+    background-color: blueviolet;
+}
+
+.name {
+    border: 2px solid red;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    font-family: cursive;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#return {
+    animation: spin 1.5s infinite linear;
+    display: inline-block;
+    font-size: 30px;
+    color: blue;
+}
+
+#bigFour {
+    margin: 0 auto;
+}
+
+.gradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(54deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 206, 1) 100%);
+}
+
+/* dropdown menu */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-trigger {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-wrapper {
+    position: absolute;
+    display: none;
+    background-color: white;
+    border: 1px solid blue;
+    margin-top: 5px;
+}
+
+.dropdown-trigger:hover + .dropdown-wrapper,
+.dropdown-wrapper:hover {
+    display: block;
+}
+
+.dropdown-content {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.dropdown-content li {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    list-style-type: none;
+    outline: none; /* Remove outline on hover */
+}
+
+.dropdown-content li:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#back {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.rightSide1 {
+    background-color: red;
+}
+
+.rightSide2 {
+    background-color: pink;
+}
+
+.leftSide1 {
+    background-color: orange;
+}

@@ -24,9 +24,9 @@
 	<section>
 
 		<!-- Hobbies -->
-		<table class="bigFour">
+		<table id="bigFour">
 			<tr>
-				<td class="leftSide">
+				<td class="leftSide1">
 					<ul>
 						<li>Listining to System of a Down
 							<ul>
@@ -47,7 +47,9 @@
 						</li>
 					</ul>
 				</td>
-				<td class="rightSide">
+
+				<!-- Form -->
+				<td class="rightSide1">
 					<form action="http://www.csun.edu/~akaplan/index.php" method="POST">
 						<label for="yourname">Your Name:</label>
 						<input type="text" id="yourname" name="yourname">
@@ -60,24 +62,40 @@
 						<input type="submit" value="Submit">
 						<input type="reset" value="Clear">
 					</form>
-
-
 				</td>
 			</tr>
 
 			<tr>
-				<td class="leftSide">
+				<!-- dropdown menu -->
+				<td class="leftSide2">
+					<div class="dropdown-container">
+						<div class="dropdown-trigger">Application Layer</div>
+						<div class="dropdown-wrapper">
+							<ul class="dropdown-content">
+								<li>Transport Layer</li>
+								<li>Internet Layer</li>
+								<li>Network Interface Layer</li>
+							</ul>
+						</div>
+					</div>
 				</td>
 
-				<td class="rightSide">
-
+				<!-- Look up form -->
+				<td class="rightSide2">
+					<div class="form-container">
+						<form action="https://www.google.com/search" method="GET" target="_blank">
+							<label for="lookup">Lookup:</label>
+							<input type="text" id="lookup" name="q">
+							<br>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
 				</td>
 			</tr>
-
 		</table>
 	</section>
 
-	<footer>
+	<footer id="back">
 		<a id="return" href="lab1.html">
 			<i class="fa-solid fa-rotate-left"></i>
 		</a>
