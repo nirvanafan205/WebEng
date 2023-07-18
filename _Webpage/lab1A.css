@@ -1,7 +1,9 @@
+/* background color of page */
 body {
     background-color: blueviolet;
 }
 
+/* name on top left corner */
 .name {
     border: 2px solid red;
     padding: 5px;
@@ -10,12 +12,14 @@ body {
     font-family: cursive;
 }
 
+/* alows font awesome image do its thing */
 @keyframes spin {
     to {
         transform: rotate(360deg);
     }
 }
 
+/* alows font awesome image do its thing */
 #return {
     animation: spin 1.5s infinite linear;
     display: inline-block;
@@ -23,22 +27,19 @@ body {
     color: blue;
 }
 
+/* spacing for the table */
 #bigFour {
     margin: 0 auto;
 }
 
-.gradient {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(54deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(255, 0, 206, 1) 100%);
-}
-
 /* dropdown menu */
-.dropdown-container {
+.dropdownContainer {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-trigger {
+/* menu when triggered */
+.dropdownTrigger {
     border: 2px solid blue;
     background-color: blue;
     color: white;
@@ -46,7 +47,8 @@ body {
     cursor: pointer;
 }
 
-.dropdown-wrapper {
+/* wraping for the content */
+.wrapper {
     position: absolute;
     display: none;
     background-color: white;
@@ -54,37 +56,46 @@ body {
     margin-top: 5px;
 }
 
-.dropdown-trigger:hover + .dropdown-wrapper,
-.dropdown-wrapper:hover {
+.dropdownTrigger:hover+.wrapper,
+.wrapper:hover {
     display: block;
 }
 
-.dropdown-content {
+/* content formating */
+.content {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.dropdown-content li {
+/* content when hovered */
+.content li {
     border: 2px solid blue;
     background-color: blue;
     color: white;
     padding: 10px;
+
+    /* changing cursor when hovering over content */
     cursor: pointer;
     list-style-type: none;
-    outline: none; /* Remove outline on hover */
+
+    /* Remove outline on hover */
+    outline: none;
 }
 
-.dropdown-content li:hover {
+/* changes color when menu content is hovered */
+.content li:hover {
     background-color: yellow;
     color: black;
 }
 
+/* footer note and return button */
 #back {
     padding-top: 10rem;
     text-align: center;
 }
 
+/* colors of each table's cell */
 .rightSide1 {
     background-color: red;
 }

@@ -5,9 +5,6 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="lab1A.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/cd01da16da.js" crossorigin="anonymous"></script>
 	<title>About Section</title>
 </head>
 
@@ -19,81 +16,77 @@
 		<i id="return" class="fa-regular fa-lemon"></i>
 	</div>
 
-	<div class="gradient"></div>
+	<!-- Hobbies -->
+	<table id="bigFour">
+		<tr>
+			<td class="leftSide1">
+				<ul>
+					<li>Listining to System of a Down
+						<ul>
+							<li>10yrs</li>
+						</ul>
+					</li>
 
-	<section>
+					<li>Skateboarding
+						<ul>
+							<li>5yrs</li>
+						</ul>
+					</li>
 
-		<!-- Hobbies -->
-		<table id="bigFour">
-			<tr>
-				<td class="leftSide1">
-					<ul>
-						<li>Listining to System of a Down
-							<ul>
-								<li>10yrs</li>
-							</ul>
-						</li>
+					<li>Minecraft
+						<ul>
+							<li>3yrs</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
 
-						<li>Skateboarding
-							<ul>
-								<li>5yrs</li>
-							</ul>
-						</li>
+			<!-- Form -->
+			<td class="rightSide1">
 
-						<li>Minecraft
-							<ul>
-								<li>3yrs</li>
-							</ul>
-						</li>
-					</ul>
-				</td>
+				<form action="http://www.csun.edu/~akaplan/index.php" method="POST">
+					<label for="yourname">Your Name:</label>
+					<input type="text" id="yourname" name="yourname">
+					<br>
+					<label for="major">Major:</label>
+					<input type="text" id="major" name="major">
+					<br>
+					<input type="hidden" name="page" value="2">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Clear">
+				</form>
 
-				<!-- Form -->
-				<td class="rightSide1">
-					<form action="http://www.csun.edu/~akaplan/index.php" method="POST">
-						<label for="yourname">Your Name:</label>
-						<input type="text" id="yourname" name="yourname">
+			</td>
+		</tr>
 
-						<label for="major">Major:</label>
-						<input type="text" id="major" name="major">
+		<tr>
+			<!-- dropdown menu -->
+			<td class="leftSide2">
+				<div class="dropdownContainer">
+					<div class="dropdownTrigger">Application Layer</div>
+					<div class="wrapper">
+						<ul class="content">
+							<li>Transport Layer</li>
+							<li>Internet Layer</li>
+							<li>Network Interface Layer</li>
+						</ul>
+					</div>
+				</div>
+			</td>
 
-						<input type="hidden" name="page" value="2">
-
+			<!-- Look up form -->
+			<td class="rightSide2">
+				<div class="form-container">
+					<form action="https://www.google.com/search" method="GET" target="_blank">
+						<label for="lookup">Lookup:</label>
+						<input type="text" id="lookup" name="q">
+						<br>
 						<input type="submit" value="Submit">
-						<input type="reset" value="Clear">
 					</form>
-				</td>
-			</tr>
-
-			<tr>
-				<!-- dropdown menu -->
-				<td class="leftSide2">
-					<div class="dropdown-container">
-						<div class="dropdown-trigger">Application Layer</div>
-						<div class="dropdown-wrapper">
-							<ul class="dropdown-content">
-								<li>Transport Layer</li>
-								<li>Internet Layer</li>
-								<li>Network Interface Layer</li>
-							</ul>
-						</div>
-					</div>
-				</td>
-
-				<!-- Look up form -->
-				<td class="rightSide2">
-					<div class="form-container">
-						<form action="https://www.google.com/search" method="GET" target="_blank">
-							<label for="lookup">Lookup:</label>
-							<input type="text" id="lookup" name="q">
-							<br>
-							<input type="submit" value="Submit">
-						</form>
-					</div>
-				</td>
-			</tr>
-		</table>
-	</section>
+				</div>
+			</td>
+		</tr>
+	</table>
 
 	<footer id="back">
 		<a id="return" href="lab1.html">
@@ -101,6 +94,8 @@
 		</a>
 		<p><small>&copy; 2023 Matthew Garcia All rights reserved</small></p>
 	</footer>
+
+	<script src="https://kit.fontawesome.com/cd01da16da.js" crossorigin="anonymous"></script>
 
 </body>
 
