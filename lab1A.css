@@ -1,0 +1,111 @@
+/* background color of page */
+body {
+    background-color: blueviolet;
+}
+
+/* name on top left corner */
+.name {
+    border: 2px solid red;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    font-family: cursive;
+}
+
+/* alows font awesome image do its thing */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* alows font awesome image do its thing */
+#return {
+    animation: spin 1.5s infinite linear;
+    display: inline-block;
+    font-size: 30px;
+    color: blue;
+}
+
+/* spacing for the table */
+#bigFour {
+    margin: 0 auto;
+}
+
+/* dropdown menu */
+.dropdownContainer {
+    position: relative;
+    display: inline-block;
+}
+
+/* menu when triggered */
+.dropdownTrigger {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* wraping for the content */
+.wrapper {
+    position: absolute;
+    display: none;
+    background-color: white;
+    border: 1px solid blue;
+    margin-top: 5px;
+}
+
+/* when dropdownTrigger is covered, the immediately selects the elment .wrapper wjocj os beomg jpvered pver */
+.dropdownTrigger:hover+.wrapper,
+.wrapper:hover {
+    /* property .wrapper element is set to block, this makes the contents visible */
+    display: block;
+}
+
+/* content formating */
+.content {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* content when hovered */
+.content li {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+
+    /* changing cursor when hovering over content */
+    cursor: pointer;
+    list-style-type: none;
+
+    /* Remove outline on hover */
+    outline: none;
+}
+
+/* changes color when menu content is hovered */
+.content li:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* footer note and return button */
+#back {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+/* colors of each table's cell */
+.rightSide1 {
+    background-color: red;
+}
+
+.rightSide2 {
+    background-color: pink;
+}
+
+.leftSide1 {
+    background-color: orange;
+}

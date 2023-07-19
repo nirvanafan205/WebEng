@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="lab1A.css">
+	<title>About Section</title>
+</head>
+
+<!-- all of content will go here -->
+
+<body>
+	<div class="name">
+		<h1>Matthew Garcia</h1>
+		<i id="return" class="fa-regular fa-lemon"></i>
+	</div>
+
+	<!-- Hobbies -->
+	<table id="bigFour">
+		<tr>
+			<td class="leftSide1">
+				<ul>
+					<li>Listining to System of a Down
+						<ul>
+							<li>10yrs</li>
+						</ul>
+					</li>
+
+					<li>Skateboarding
+						<ul>
+							<li>5yrs</li>
+						</ul>
+					</li>
+
+					<li>Minecraft
+						<ul>
+							<li>3yrs</li>
+						</ul>
+					</li>
+				</ul>
+			</td>
+
+			<!-- Form -->
+			<td class="rightSide1">
+
+				<form action="http://www.csun.edu/~akaplan/index.php" method="POST">
+					<label for="yourname">Your Name:</label>
+					<input type="text" id="yourname" name="yourname">
+					<br>
+					<label for="major">Major:</label>
+					<input type="text" id="major" name="major">
+					<br>
+					<input type="hidden" name="page" value="2">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Clear">
+				</form>
+
+			</td>
+		</tr>
+
+		<tr>
+			<!-- dropdown menu -->
+			<td class="leftSide2">
+				<div class="dropdownContainer">
+					<div class="dropdownTrigger">Application Layer</div>
+					<div class="wrapper">
+						<ul class="content">
+							<li>Transport Layer</li>
+							<li>Internet Layer</li>
+							<li>Network Interface Layer</li>
+						</ul>
+					</div>
+				</div>
+			</td>
+
+			<!-- Look up form -->
+			<td class="rightSide2">
+				<div class="form-container">
+					<form action="https://www.google.com/search" method="GET" target="_blank">
+						<label for="lookup">Lookup:</label>
+						<input type="text" id="lookup" name="q">
+						<br>
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<footer id="back">
+		<a id="return" href="lab1.html">
+			<i class="fa-solid fa-rotate-left"></i>
+		</a>
+		<p><small>&copy; 2023 Matthew Garcia All rights reserved</small></p>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/cd01da16da.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
